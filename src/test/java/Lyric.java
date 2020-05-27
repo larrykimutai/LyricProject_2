@@ -40,8 +40,8 @@ if(items.isEmpty()){
 
       HtmlElement spanPrice = ((HtmlElement) htmlItem.getFirstByXPath(".//a/span[@class='result-price']")) ;
 
-      String itemName = itemAnchor.asText()
-      String itemUrl =  itemAnchor.getHrefAttribute()
+      String itemName = itemAnchor.asText();
+      String itemUrl =  itemAnchor.getHrefAttribute();
 
       // It is possible that an item doesn't have any price
       String itemPrice = spanPrice == null ? "0.0" : spanPrice.asText() ;
